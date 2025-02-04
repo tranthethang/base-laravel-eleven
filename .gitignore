@@ -21,3 +21,5 @@ coverage.xml
 /.fleet
 /.idea
 /.vscode
+/docs/.build
+/.phpdoc

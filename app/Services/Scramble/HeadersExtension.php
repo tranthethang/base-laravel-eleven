@@ -16,10 +16,10 @@ class HeadersExtension extends OperationExtension
         $operation->addParameters([
             Parameter::make('X-API-KEY', 'header')
                 ->setSchema(
-                    Schema::fromType(new StringType)
+                    Schema::fromType(new StringType),
                 )
                 ->required(true)
-                ->example('secret'),
+                ->example('Enter X-API-KEY here'),
         ]);
     }
 }

@@ -12,14 +12,14 @@ class TrustRequestMiddleware
     /**
      * Handle an incoming request.
      *
-     * @param  Closure(Request): (Response)  $next
+     * @param Closure(Request): (Response) $next
      *
      * @throws NotTrustRequestException
      */
     public function handle(Request $request, Closure $next): Response
     {
         $apiKey = $request->header('X-Api-Key');
-        $match = trim(config('constant.x_api_key'));
+        $match  = trim(config('constant.x_api_key'));
 
         if ($match && $apiKey !== $match) {
             throw new NotTrustRequestException;

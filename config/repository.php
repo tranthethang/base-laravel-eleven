@@ -139,7 +139,7 @@ return [
        | 'except'  =>['find'],
        */
         'allowed' => [
-            'only' => null,
+            'only'   => null,
             'except' => null,
         ],
     ],
@@ -212,14 +212,14 @@ return [
         |
         */
         'params' => [
-            'search' => 'search',
+            'search'       => 'search',
             'searchFields' => 'searchFields',
-            'filter' => 'filter',
-            'orderBy' => 'orderBy',
-            'sortedBy' => 'sortedBy',
-            'with' => 'with',
-            'searchJoin' => 'searchJoin',
-            'withCount' => 'withCount',
+            'filter'       => 'filter',
+            'orderBy'      => 'orderBy',
+            'sortedBy'     => 'sortedBy',
+            'with'         => 'with',
+            'searchJoin'   => 'searchJoin',
+            'withCount'    => 'withCount',
         ],
     ],
     /*
@@ -229,19 +229,19 @@ return [
     |
     */
     'generator' => [
-        'basePath' => app()->path(),
-        'rootNamespace' => 'App\\',
+        'basePath'          => app()->path(),
+        'rootNamespace'     => 'App\\',
         'stubsOverridePath' => app()->path(),
-        'paths' => [
-            'models' => 'Models',
+        'paths'             => [
+            'models'       => 'Models',
             'repositories' => 'Repositories\\Eloquent',
-            'interfaces' => 'Contracts\\Repositories',
+            'interfaces'   => 'Contracts\\Repositories',
             'transformers' => 'Transformers',
-            'presenters' => 'Presenters',
-            'validators' => 'Validators',
-            'controllers' => 'Http/Controllers',
-            'provider' => 'RepositoryServiceProvider',
-            'criteria' => 'Criteria',
+            'presenters'   => 'Presenters',
+            'validators'   => 'Validators',
+            'controllers'  => 'Http/Controllers',
+            'provider'     => 'RepositoryServiceProvider',
+            'criteria'     => 'Criteria',
         ],
     ],
 ];

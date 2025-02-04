@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Middleware\OAuthLoginPassword;
 use App\Http\Middleware\TrustRequestMiddleware;
 use Illuminate\Foundation\Application;
 use Illuminate\Foundation\Configuration\Exceptions;
@@ -15,6 +16,10 @@ return Application::configure(basePath: dirname(__DIR__))
         apiPrefix: 'api/',
     )
     ->withMiddleware(function (Middleware $middleware) {
+        $middleware->alias([
+            'oauth2' => OAuthLoginPassword::class,
+        ]);
+
         $middleware->api(prepend: [
             TrustRequestMiddleware::class,
         ]);

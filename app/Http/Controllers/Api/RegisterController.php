@@ -16,6 +16,8 @@ use App\Services\Users\RegisterServiceInterface;
     }
 
     /**
+     * Register a new account.
+     *
      * @unauthenticated
      */
     public function handle(RegisterRequest $registerRequest)
@@ -25,7 +27,7 @@ use App\Services\Users\RegisterServiceInterface;
         return new UserResource($this->registerService->register(
             $form['name'],
             $form['email'],
-            $form['password']
+            $form['password'],
         ));
     }
 }

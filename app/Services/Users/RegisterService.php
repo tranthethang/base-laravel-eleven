@@ -16,8 +16,8 @@ class RegisterService implements RegisterServiceInterface
     {
         try {
             return User::create([
-                'name' => $name,
-                'email' => $email,
+                'name'     => $name,
+                'email'    => $email,
                 'password' => bcrypt($password),
             ]);
         } catch (Exception $e) {

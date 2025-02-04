@@ -1,4 +1,4 @@
-1. Laravel IDE Helper
+__1.__ Laravel IDE Helper
 > https://github.com/barryvdh/laravel-ide-helper
 
 ```shell
@@ -14,4 +14,10 @@ php artisan ide-helper:models
 ```shell
 # PhpStorm Meta file
 php artisan ide-helper:meta
+```
+
+
+__2.__ Generate PhpDocuments
+```shell
+php phpdoc.phar -d app,config,database,resources
 ```

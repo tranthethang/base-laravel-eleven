@@ -9,6 +9,11 @@ use App\Models\User;
 
 #[AllowDynamicProperties] class ProfileController extends Controller
 {
+    /**
+     * Get the currently logged-in user information.
+     *
+     * @return UserResource
+     */
     public function handle()
     {
         $user = User::query()->findOrFail(auth()->id());
