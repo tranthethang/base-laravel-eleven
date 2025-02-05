@@ -4,7 +4,7 @@ use App\Http\Middleware\TrustRequestMiddleware;
 use Illuminate\Foundation\Application;
 use Illuminate\Foundation\Configuration\Exceptions;
 use Illuminate\Foundation\Configuration\Middleware;
-use Modules\Auth\app\Middleware\OAuthLoginPassword;
+use Modules\Auth\Http\Middleware\OAuthLoginPassword;
 
 return Application::configure(basePath: dirname(__DIR__))
     ->withRouting(
