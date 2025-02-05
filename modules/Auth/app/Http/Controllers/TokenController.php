@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\Api\Auth;
+namespace Modules\Auth\Http\Controllers;
 
 use AllowDynamicProperties;
 use App\Http\Resources\TokenResource;

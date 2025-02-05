@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Middleware;
+namespace Modules\Auth\App\Middleware;
 
 use Closure;
 use Illuminate\Http\Request;
@@ -17,8 +17,8 @@ class OAuthLoginPassword
     {
         $request->merge([
             'grant_type'    => $type,
-            'client_id'     => config('oauth.password.client_id'),
-            'client_secret' => config('oauth.password.client_secret'),
+            'client_id'     => config('module_auth.password.client_id'),
+            'client_secret' => config('module_auth.password.client_secret'),
         ]);
 
         return $next($request);

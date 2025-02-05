@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\Api;
+namespace Modules\Auth\Http\Controllers;
 
 use AllowDynamicProperties;
 use App\Http\Controllers\Controller;
