@@ -9,7 +9,7 @@ use App\Http\Resources\TokenResource;
 #[AllowDynamicProperties] class RefreshTokenController extends TokenController
 {
     /**
-     * Authorize a client to access the user's account by refresh_token.
+     * Request a new access_token using the refresh_token.
      *
      * @return TokenResource
      */

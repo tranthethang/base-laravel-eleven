@@ -9,7 +9,7 @@ use App\Http\Resources\TokenResource;
 #[AllowDynamicProperties] class AccessTokenController extends TokenController
 {
     /**
-     * Authorize a client to access the user's account by email and password.
+     * Verify account with email and password.
      *
      * @return TokenResource
      */
