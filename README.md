@@ -19,6 +19,11 @@ The template comes with the following pre-built API endpoints:
 
 4. **Token Refresh** - Refreshes the `access_token` using a `refresh_token`.
 
+5. **Laravel Module**
+   `nwidart/laravel-modules` is a Laravel package which was created to manage your large Laravel app using modules. A module is like a Laravel package, it has some views, controllers or models.
+   https://nwidart.com/laravel-modules/v6/introduction
+
+
 ## OpenAPI Documentation
 
 The template includes pre-configured OpenAPI documentation powered by the **Scramble** library.
