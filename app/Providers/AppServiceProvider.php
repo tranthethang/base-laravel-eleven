@@ -2,7 +2,6 @@
 
 namespace App\Providers;
 
-use App\Services\Users;
 use Dedoc\Scramble\Scramble;
 use Dedoc\Scramble\Support\Generator\OpenApi;
 use Dedoc\Scramble\Support\Generator\SecurityScheme;
@@ -11,9 +10,7 @@ use Laravel\Passport\Passport;
 
 class AppServiceProvider extends ServiceProvider
 {
-    public $bindings = [
-        Users\RegisterServiceInterface::class => Users\RegisterService::class,
-    ];
+    public $bindings = [];
 
     /**
      * Register any application services.

@@ -7,7 +7,7 @@ use App\Models\User;
 use Exception;
 use Illuminate\Support\Facades\Log;
 
-class RegisterService implements RegisterServiceInterface
+class RegisterUserUserService implements RegisterUserServiceInterface
 {
     /**
      * @throws CannotRegisterUserException
